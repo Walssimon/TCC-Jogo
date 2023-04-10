@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-group description="" sid="545377880221721" title="Group">
+            <sub-events>
+                <event-block sid="863815424742557">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="241787963610439" type="Nick" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="392901225829795" type="Nick">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="487450790962235">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="893020937060339" type="System">
+                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="251908257299762" type="Nick">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="254456266679386">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="582265566516701" type="System">
+                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="656223061378048" type="Nick">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="850866710187941">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="920973504817269" type="Nick" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="622385048264861">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="942941703797593" type="Nick" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="343438660748575" type="Nick">
+                                    <param id="0" name="Animation">&quot;IDLE&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="554016900488784">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="446142242715632" type="Nick" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="709533005871568" type="Nick">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="889563595568436">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="498242976315272" type="System">
+                                            <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="519685966397402" type="Nick">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="144446327009634">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="151226534394253" type="System">
+                                            <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="909531573593802" type="Nick">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="228642735398960">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="188518366592669" type="Nick">
+                            <param id="0" name="Instance variable">Running</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="562774526409423" type="Nick">
+                            <param id="0" name="Max Speed">800</param>
+                        </action>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="388031008085335" type="Nick">
+                            <param id="0" name="Acceleration">3500</param>
+                        </action>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="648676876933743" type="Nick">
+                            <param id="0" name="Jump strength">15 + Nick.Platform.Speed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813681585342162">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="723591119356647" type="Nick">
+                            <param id="0" name="Instance variable">Running</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="607805777098768" type="Nick">
+                            <param id="0" name="Acceleration">2500</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="242785857118524" type="Nick">
+                            <param id="0" name="Max Speed">550</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="183166300290666">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="473465461247179" type="Nick">
+                    <param id="0" name="Object">TiledBackground8</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="595978459088603" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="692581492316619" type="Nick">
+                    <param id="0" name="X">1377</param>
+                    <param id="1" name="Y">759</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="977170382715100">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="145650233183018" type="Nick">
+                    <param id="0" name="Object">TiledBackground9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="481990631019415" type="Nick">
+                    <param id="0" name="X">855</param>
+                    <param id="1" name="Y">128</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="281204907765857">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="314552850709370" type="Sprite9">
+                    <param id="0" name="Object">TiledBackground10</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="837447016305262" type="Sprite10">
+                    <param id="0" name="Object">TiledBackground10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="807845071704880" type="Sprite8">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956331308719767">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

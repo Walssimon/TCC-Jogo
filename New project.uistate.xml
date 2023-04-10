@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <layout order="2">Cano1</layout>
+        <layout order="3">Cano2</layout>
+        <layout order="5">minigame caminho</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <event-sheet order="4">Cano1</event-sheet>
+        <event-sheet order="6">Event sheet 2</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="Rotate" />
+        <family expanded="0" name="Shake" />
+        <family expanded="0" name="Steps" />
+        <family expanded="1" name="Family1" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Nick/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Jimmy/" />
+        <folder expanded="1" path="animation-folder/Cano_01/" />
+        <folder expanded="1" path="animation-folder/Cano_03/" />
+        <folder expanded="1" path="animation-folder/Cano_02/" />
+        <folder expanded="1" path="animation-folder/Cano_04/" />
+        <folder expanded="1" path="animation-folder/Cano_05/" />
+        <folder expanded="1" path="animation-folder/Cano_06/" />
+        <folder expanded="1" path="animation-folder/Cano_07/" />
+        <folder expanded="1" path="animation-folder/Cano_08/" />
+        <folder expanded="1" path="animation-folder/Cano_09/" />
+        <folder expanded="1" path="animation-folder/Cano_10/" />
+        <folder expanded="1" path="animation-folder/Cano_11/" />
+        <folder expanded="1" path="animation-folder/MAchine/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Cano_12/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Luz/" />
+        <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/Maquina/" />
+        <folder expanded="1" path="animation-folder/Reservatorio/" />
+        <folder expanded="1" path="animation-folder/Mesa/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/LugarCerto/" />
+        <folder expanded="1" path="animation-folder/Alavanca/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/preto/" />
+        <folder expanded="1" path="animation-folder/Filtro/" />
+        <folder expanded="1" path="animation-folder/Cano_13/" />
+        <folder expanded="1" path="animation-folder/HUDCanos/" />
+        <folder expanded="1" path="animation-folder/Cano_14/" />
+        <folder expanded="1" path="animation-folder/Cano_15/" />
+        <folder expanded="1" path="animation-folder/Cano_16/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Block/" />
+        <folder expanded="1" path="animation-folder/agua/" />
+        <folder expanded="1" path="animation-folder/agua2/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/Sprite15/" />
+        <folder expanded="1" path="animation-folder/Sprite16/" />
+        <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Gvilao1/" />
+        <folder expanded="1" path="animation-folder/Gvilao2/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/Bolinha/" />
+        <folder expanded="1" path="animation-folder/Bolinha2/" />
+        <folder expanded="1" path="animation-folder/Bolinha3/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Animation/" />
+        <folder expanded="1" path="animation-folder/Retangulo/" />
+        <folder expanded="1" path="animation-folder/Retangulo2/" />
+        <folder expanded="1" path="animation-folder/Retangulo3/" />
+    </folders-expanded>
+</c2uistate>

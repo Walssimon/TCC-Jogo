@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="918563298829833">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="638221797476232" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="178145207211382" type="Animation">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="967121417076416">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="125228581333647" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="222673298256837" type="Camera">
+                    <param id="0" name="X">lerp(Camera.X, Player.X,0.05)</param>
+                    <param id="1" name="Y">lerp(Camera.Y, Player.Y - 200,0.05)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="990073137534021">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="793622952876528" type="Light" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="112414253484305" type="Light">
+                    <param id="0" name="Object">Nick</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" disabled="1" sid="401485599463892" title="Gamepad">
+            <sub-events>
+                <event-block sid="518467465384424">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="284762216303685" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="882114433131700" type="Nick">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="593796311224187">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="566884550457542" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="629515815754172" type="Nick">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="143137733469815">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="995108209160578" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="421638156013154" type="Nick">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404940593148190">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="433922076997520" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="429121861594895" type="Nick">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="310039448914822">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="751841676884889" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">11</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="293834054331970" type="Keyboard">
+                            <param id="0" name="Key">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="390011967841740" type="Nick">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453759682118508">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="815688732491561" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="992390860899586" type="Nick">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388827236712414">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="863282765466519" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="532135942476133" type="Nick">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="674202686116543">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="287050931202439" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="561495377759670" type="Nick">
+                            <param id="0" name="Instance variable">Running</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="251150664699823" type="Nick">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453715977283973">
+                    <conditions>
+                        <condition id="7" name="On button released" sid="498564663183459" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="907290280433778" type="Nick">
+                            <param id="0" name="Instance variable">Running</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="274750329858092" title="Keyboard">
+            <sub-events>
+                <event-block sid="904744875226620">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="568058207641083" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="318380173100740" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="345567864391376" type="Animation">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="395837353326492">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="723546405541570" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="830068163340370" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="652850887251247" type="Animation">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="701048171906268">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="337225508118349" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="436575704748384" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="324773947430377">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="978930036777387" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="730595645836668" type="Player" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="251930873893155" type="Player">
+                            <param id="0" name="Instance variable">Atk2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="389180852479141" type="Player">
+                            <param id="0" name="Instance variable">Atk1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="471680290539513">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="568341753812624" type="Keyboard">
+                            <param id="0" name="Key">88</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="562205569236973" type="Player">
+                            <param id="0" name="Instance variable">Atk1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="235871771135044" type="Player">
+                            <param id="0" name="Instance variable">Atk2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" disabled="1" sid="138490267684104" title="PersongaemSprite">
+                    <sub-events>
+                        <event-block disabled="1" sid="404073807942585">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="821281638020452" type="Keyboard">
+                                    <param id="0" name="Key">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="595751761247283" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="361263165865952">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="609888127420273" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="220675077681706" type="Nick">
+                                    <param id="0" name="Instance variable">Ataque1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="267738057110746">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="346536090523716" type="Keyboard">
+                                    <param id="0" name="Key">88</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="936240284569380" type="Nick">
+                                    <param id="0" name="Instance variable">Ataque2</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="558462249422071">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="870457172708622" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="834989010773077" type="Nick">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="250479057750545">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="401766271196850" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="970581000856347" type="Nick">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="297306435461033">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="719795184735787" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="275121430466518" type="Nick">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="373728698235165">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="106857056579407" type="Keyboard">
+                                    <param id="0" name="Key">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="748962559914606" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" disabled="1" sid="199689395287028" title="Sprite">
+            <sub-events>
+                <event-block disabled="1" sid="743780940966505">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="762219844427686" type="Nick">
+                            <param id="0" name="Instance variable">Ataque1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="740735805681309" type="Bolinha">
+                            <param id="0" name="X">-100</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="496474964655786" type="Bolinha2">
+                            <param id="0" name="X">-100</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="452951000312938" type="Bolinha3">
+                            <param id="0" name="X">-100</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="239236521615114">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="711079119022865" type="Nick" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="777675370500153" type="Nick">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block disabled="1" sid="897126145562787">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="463688453206158" type="System">
+                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="999193271568357" type="Nick">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="491541501540949">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="134802251902999" type="System">
+                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="443711701206214" type="Nick">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="137911989121352">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="500212563147012" type="Nick" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="299215058832177">
+                            <conditions>
+                                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="356457952431878" type="Nick" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="801170858600108" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block disabled="1" sid="844023643404893">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="197467638399974" type="Nick" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block disabled="1" sid="320009209946716">
+                                            <conditions>
+                                                <condition id="7" name="On any key released" sid="648372654733588" type="Keyboard" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="364816416967334" type="Nick">
+                                                    <param id="0" name="Animation">&quot;IDLE&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block disabled="1" sid="376733016498050">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="298176067321964" type="Nick" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block disabled="1" sid="746495963336920">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="539443609360799" type="System">
+                                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="315355611163939" type="Nick">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="406157201653309" type="Nick">
+                                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block disabled="1" sid="393600584490559">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="584698910986194" type="Nick" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block disabled="1" sid="249176553327016">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="871958956596185" type="System">
+                                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="560393564288660" type="Nick">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="265917489142615" type="Nick">
+                                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="615711216853598">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="954162745776204" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="792110999644713" type="Nick">
+                                    <param id="0" name="Max Speed">800</param>
+                                </action>
+                                <action behavior="Platform" id="2" name="Set acceleration" sid="481209961871696" type="Nick">
+                                    <param id="0" name="Acceleration">3500</param>
+                                </action>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="912448278653533" type="Nick">
+                                    <param id="0" name="Jump strength">15 + Nick.Platform.Speed</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block disabled="1" sid="693694537747945">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="142725796810147" type="Nick" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block disabled="1" sid="435097161628854">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="756591516800024" type="System">
+                                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="591741130402533" type="Nick">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="894840104827756" type="Nick">
+                                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block disabled="1" sid="546885222908214">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="513992848694163" type="Nick" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block disabled="1" sid="840273665504636">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="141503269160328" type="System">
+                                                    <param id="0" name="First value">Nick.Platform.VectorX</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="156686154112837" type="Nick">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="373577881159311" type="Nick">
+                                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="178091260255517">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="484605940258834" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="2" name="Set acceleration" sid="741478098032744" type="Nick">
+                                    <param id="0" name="Acceleration">2500</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="256441923792485" type="Nick">
+                                    <param id="0" name="Max Speed">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="156260469842796">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="607452128829108" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="521940957642090" type="Nick">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="926784546400560" type="Nick">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="268816997168428" type="Nick">
+                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="949162500615172">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="181427860023362" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="684464098918855" type="Nick">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="941411792858084">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="107641585061291" type="Keyboard">
+                            <param id="0" name="Key">16</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="555985698803705" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="540863561929780" type="Nick">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="950180277126517">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="501227932797631" type="Nick">
+                            <param id="0" name="Instance variable">Ataque1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="436392387569599" type="Nick">
+                            <param id="0" name="Animation">&quot;Ataque&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block disabled="1" sid="667125826657644">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="477084525884746" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="723773579771446" type="Bolinha">
+                                    <param id="0" name="Object">Nick</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="661661076910957" type="Bolinha2">
+                                    <param id="0" name="Object">Nick</param>
+                                    <param id="1" name="Image point (optional)">2</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="406851824396224" type="Bolinha3">
+                                    <param id="0" name="Object">Nick</param>
+                                    <param id="1" name="Image point (optional)">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="227553264063434">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="509807441958789" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block disabled="1" sid="920740978432998">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="547989854140994" type="Nick">
+                                    <param id="0" name="Animation">&quot;Ataque&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="491281094163677" type="Nick">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="162886615962683" type="Nick">
+                                    <param id="0" name="Instance variable">Ataque1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="114319492672428">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="531103776402583" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="712161785768496">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="111406659568559" type="Player" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="954500103430506" type="Player">
+                            <param id="0" name="Instance variable">Atk1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="551578304553809" type="Player">
+                            <param id="0" name="Instance variable">Atk2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="705383288577614" type="Animation">
+                            <param id="0" name="Animation">&quot;WALK&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="392698881131664">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="695293117483069" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="817088239281945">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="454356345013372" type="Player" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="254639370656290" type="Player">
+                            <param id="0" name="Instance variable">Atk1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="749512884350659" type="Player">
+                            <param id="0" name="Instance variable">Atk2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="865206519471105" type="Animation">
+                            <param id="0" name="Animation">&quot;IDLE&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="960626616976624">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="381809709840030" type="Player" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="798100670721017" type="Player">
+                    <param id="0" name="Instance variable">Atk2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="362542653414474" type="Player">
+                    <param id="0" name="Instance variable">Atk1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="176906393849630" type="Animation">
+                    <param id="0" name="Animation">&quot;JUMP&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="748864701824669">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="829217323082763" type="Player">
+                    <param id="0" name="Instance variable">Atk1</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="162664804026421" type="Player" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="814361394314792" type="Player">
+                    <param id="0" name="Instance variable">Atk2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="813451232851047">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="350318741227411" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="413585934165203" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="776521706687535">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="860983705730681" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="289564844397845" type="Bolinha">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="197422666872780" type="Bolinha2">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="939247175044773" type="Bolinha3">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="125508378025499">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="429459078604073" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="821811967810645" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="558586504790895">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="697519816541767" type="Animation">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="560233714597657" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="456773012760256" type="Animation">
+                            <param id="0" name="Animation">&quot;IDLE&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="423724204555544" type="Player">
+                            <param id="0" name="Instance variable">Atk1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="392347844088704">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="343810167657209" type="Player">
+                    <param id="0" name="Instance variable">Atk1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="947798030029584" type="Bolinha">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action id="-3" name="Set position" sid="644005600584689" type="Bolinha2">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action id="-3" name="Set position" sid="796044753025885" type="Bolinha3">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="381899335655692" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="708258271349957">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="879409138846349" type="Player">
+                    <param id="0" name="Instance variable">Atk2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="908114590893414" type="Player">
+                    <param id="0" name="Instance variable">Atk1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="351785140025710">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="238201856200476" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" disabled="1" id="11" name="Set enabled" sid="922307612608807" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="591317600032872" type="Player">
+                            <param id="0" name="Max Speed">1800</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="421770561129027" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="304272227589805">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="188002418354969" type="Animation" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="202406590657781" type="Player">
+                                    <param id="0" name="Vector X">-8000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626758842899898">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="729790152630121" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="643856524498534" type="Player">
+                                    <param id="0" name="Vector X">8000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="917502838744471">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="232828651257476" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="580302066568566" type="Retangulo">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="520943996861182" type="Retangulo2">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="833464009996473" type="Retangulo3">
+                            <param id="0" name="Object">Animation</param>
+                            <param id="1" name="Image point (optional)">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="864420964604201">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="179130945924483" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="765533646913356" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="580667518839684">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="239174434104379" type="Animation">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">8</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="900411020986390" type="Animation">
+                            <param id="0" name="Animation">&quot;ATK2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="500033540055440" type="Animation">
+                            <param id="0" name="Animation">&quot;IDLE&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="673721542829206" type="Player">
+                            <param id="0" name="Max Speed">500</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="474894665936646" type="Player">
+                            <param id="0" name="Instance variable">Atk2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="386962269824103" type="Player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="852803708596549">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="608284516275917" type="Player">
+                    <param id="0" name="Instance variable">Atk2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="407099162851822" type="Player">
+                    <param id="0" name="Instance variable">Atk1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="527071479415693" type="Retangulo">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action id="-3" name="Set position" sid="229087214631909" type="Retangulo2">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action id="-3" name="Set position" sid="533007922195897" type="Retangulo3">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">-100</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="736927925337433" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

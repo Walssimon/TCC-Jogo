@@ -1,0 +1,1884 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>27q66dvcpqhnb</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="burn">Burn</effect>
+        <effect author="Scirra" id="exposure">Exposure</effect>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
+        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="769888835597246">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539924634950413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\158729.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ground" sid="505044700473029">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="560551174671291">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Nick" sid="842459965558916">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Esta correndo" name="Running" sid="563676443204988" type="boolean" />
+                <instance-variable name="Ataque1" sid="189063034747936" type="boolean" />
+                <instance-variable name="Ataque2" sid="765829144969601" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="421516856237201">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="156421620245016" speed="5">
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Idle\idle_0000_Camada-5.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.120192" />
+                            <point x="0.540625" y="0.120192" />
+                            <point x="0.80625" y="1" />
+                            <point x="0.259375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Idle\idle_0001_Camada-4.png">
+                        <collision-poly>
+                            <point x="0.39375" y="0.129808" />
+                            <point x="0.571875" y="0.139423" />
+                            <point x="0.725" y="1" />
+                            <point x="0.196875" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Idle\idle_0002_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.3875" y="0.144231" />
+                            <point x="0.540625" y="0.168269" />
+                            <point x="0.78125" y="1" />
+                            <point x="0.240625" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Idle\idle_0003_Camada-3.png">
+                        <collision-poly>
+                            <point x="0.3625" y="0.158654" />
+                            <point x="0.540625" y="0.173077" />
+                            <point x="0.75" y="1" />
+                            <point x="0.234375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="260833758118724" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0001_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.736112" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0002_Corrida_2.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.736112" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0003_Corrida_3.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.562501" y="1" />
+                            <point x="0.298611" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0004_Corrida_4.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.593751" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0005_Corrida_5.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.736112" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0006_Corrida_6.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.559028" y="1" />
+                            <point x="0.111111" y="0.990385" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0007_Corrida_7.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.666667" y="0.163462" />
+                            <point x="0.479167" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Run\run_0008_Corrida_8.png">
+                        <collision-poly>
+                            <point x="0.569444" y="0.197115" />
+                            <point x="0.715278" y="0.144231" />
+                            <point x="0.534723" y="1" />
+                            <point x="0.211806" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="895100722552761" speed="5">
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Jump\Jump_0002_Pulado_2.png">
+                        <collision-poly>
+                            <point x="0.5625" y="0.221154" />
+                            <point x="0.83125" y="0.225962" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Jump\Jump_0001_Pulado_3.png">
+                        <collision-poly>
+                            <point x="0.5625" y="0.197115" />
+                            <point x="0.69375" y="0.197115" />
+                            <point x="0.8125" y="1" />
+                            <point x="0.3" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Jump\Jump_0000_Camada-2.png">
+                        <collision-poly>
+                            <point x="0.23125" y="0.360577" />
+                            <point x="0.7" y="0.129808" />
+                            <point x="0.94375" y="1" />
+                            <point x="0.70625" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="972694880114946" speed="8">
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0007_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.6375" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0006_Walk_2.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.6375" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0005_Walk_3.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.65" y="0.129808" />
+                            <point x="0.46875" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0004_Walk_4.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.6375" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0003_Walk_5.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.73125" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0002_Walk_6.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.6375" y="1" />
+                            <point x="0.19375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0001_Walk_7.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.65" y="0.120192" />
+                            <point x="0.45625" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Super Shock\Walk\SSWalk_0000_Walk_8.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.269231" />
+                            <point x="0.7" y="0.153846" />
+                            <point x="0.725" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="703834279516206" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_1.png">
+                        <collision-poly>
+                            <point x="0.45625" y="0.355769" />
+                            <point x="0.625" y="0.317308" />
+                            <point x="0.7375" y="1" />
+                            <point x="0.18125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_2.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.610577" />
+                            <point x="0.6875" y="0.471154" />
+                            <point x="0.71875" y="1" />
+                            <point x="0.18125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_3.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.591346" />
+                            <point x="0.725" y="0.466346" />
+                            <point x="0.79375" y="1" />
+                            <point x="0.21875" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="7" loop="0" name="Ataque" pingpong="0" repeatcount="1" repeatto="0" sid="766704402234664" speed="25">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0006_Camada-6.png">
+                        <image-point name="Imagepoint 1" x="0.266667" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.283333" y="0.403846" />
+                        <image-point name="Imagepoint 3" x="0.35" y="0.346154" />
+                        <collision-poly>
+                            <point x="0.325" y="0.293269" />
+                            <point x="0.545833" y="0.163462" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0005_Camada-7.png">
+                        <image-point name="Imagepoint 1" x="0.0833333" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.216667" y="0.442308" />
+                        <image-point name="Imagepoint 3" x="0.266667" y="0.365385" />
+                        <collision-poly>
+                            <point x="0.0375001" y="0.475961" />
+                            <point x="0.3875" y="0.201923" />
+                            <point x="0.633333" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0004_Camada-8.png">
+                        <image-point name="Imagepoint 1" x="0.333333" y="0.192308" />
+                        <image-point name="Imagepoint 2" x="0.25" y="0.307692" />
+                        <image-point name="Imagepoint 3" x="0.35" y="0.346154" />
+                        <collision-poly>
+                            <point x="0.229167" y="0.153846" />
+                            <point x="0.579167" y="0.139423" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0003_Camada-9.png">
+                        <image-point name="Imagepoint 1" x="0.7" y="0.230769" />
+                        <image-point name="Imagepoint 2" x="0.666667" y="0.365385" />
+                        <image-point name="Imagepoint 3" x="0.55" y="0.384615" />
+                        <collision-poly>
+                            <point x="0.458333" y="0.158654" />
+                            <point x="0.7375" y="0.163462" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0001_Camada-12.png">
+                        <image-point name="Imagepoint 1" x="0.933333" y="0.442308" />
+                        <image-point name="Imagepoint 2" x="0.783333" y="0.442308" />
+                        <image-point name="Imagepoint 3" x="0.666667" y="0.384615" />
+                        <collision-poly>
+                            <point x="0.570833" y="0.221154" />
+                            <point x="0.9625" y="0.403846" />
+                            <point x="0.625" y="0.548077" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.216667" y="0.975962" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0002_Camada-10.png">
+                        <image-point name="Imagepoint 1" x="0.883333" y="0.442308" />
+                        <image-point name="Imagepoint 2" x="0.75" y="0.423077" />
+                        <image-point name="Imagepoint 3" x="0.633333" y="0.365385" />
+                        <collision-poly>
+                            <point x="0.4125" y="0.384615" />
+                            <point x="0.65" y="0.225962" />
+                            <point x="0.872917" y="0.439904" />
+                            <point x="0.605208" y="0.498798" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.480769" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0000_Camada-11.png">
+                        <image-point name="Imagepoint 1" x="0.6" y="0.615385" />
+                        <image-point name="Imagepoint 2" x="0.683333" y="0.557692" />
+                        <image-point name="Imagepoint 3" x="0.7" y="0.461538" />
+                        <collision-poly>
+                            <point x="0.4" y="0.360577" />
+                            <point x="0.675" y="0.259615" />
+                            <point x="0.670833" y="1" />
+                            <point x="0.283333" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="HIT" pingpong="0" repeatcount="1" repeatto="0" sid="414570688777031" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Dano\Danoalto_2.png">
+                        <collision-poly>
+                            <point x="0.301471" y="0.182692" />
+                            <point x="0.507353" y="0.211539" />
+                            <point x="0.860294" y="1" />
+                            <point x="0.132353" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="6" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Dano\Danoalto.png">
+                        <collision-poly>
+                            <point x="0.242647" y="0.235577" />
+                            <point x="0.360294" y="0.201923" />
+                            <point x="0.860294" y="1" />
+                            <point x="0.132353" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="HITDOWN" pingpong="0" repeatcount="1" repeatto="0" sid="155130950539474" speed="10">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.519231" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Dano\baixo_0001_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.326923" y="0.504807" />
+                            <point x="0.583333" y="0.418269" />
+                            <point x="0.852564" y="1" />
+                            <point x="0.185897" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="6" hotspotX="0.512821" hotspotY="0.519231" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Dano\baixo_0000_baixo_1.png">
+                        <collision-poly>
+                            <point x="0.205128" y="0.4375" />
+                            <point x="0.583333" y="0.423076" />
+                            <point x="0.814103" y="1" />
+                            <point x="0.173077" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Morte" pingpong="0" repeatcount="1" repeatto="0" sid="179857066013610" speed="7">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0004_morte_2.png">
+                        <collision-poly>
+                            <point x="0.252137" y="0.00675676" />
+                            <point x="0.700854" y="0.0202703" />
+                            <point x="0.688033" y="0.554054" />
+                            <point x="0.254274" y="0.499999" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0003_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.252137" y="0.00675676" />
+                            <point x="0.700854" y="0.0202703" />
+                            <point x="0.688033" y="0.554054" />
+                            <point x="0.254274" y="0.499999" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0002_morte_3.png">
+                        <collision-poly>
+                            <point x="0.252137" y="0.00675676" />
+                            <point x="0.700854" y="0.0202703" />
+                            <point x="0.685897" y="0.729729" />
+                            <point x="0.252137" y="0.675675" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0001_Camada-2.png">
+                        <collision-poly>
+                            <point x="0.320513" y="0.25" />
+                            <point x="0.728632" y="0.277027" />
+                            <point x="0.68376" y="0.635135" />
+                            <point x="0.269231" y="0.628378" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0000_morte_4.png">
+                        <collision-poly>
+                            <point x="0.273504" y="0.162162" />
+                            <point x="0.726495" y="0.175676" />
+                            <point x="0.713675" y="0.709459" />
+                            <point x="0.279915" y="0.655405" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="9" loop="0" name="Ataque2" pingpong="0" repeatcount="1" repeatto="0" sid="101019881921354" speed="11">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.433962" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0008_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.626667" hotspotY="0.509434" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0007_espada_2.png">
+                        <image-point name="Imagepoint 1" x="0.84" y="0.490566" />
+                        <image-point name="Imagepoint 2" x="0.64" y="0.301887" />
+                        <image-point name="Imagepoint 3" x="0.466667" y="0.471698" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.626667" hotspotY="0.528302" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0006_espada_3.png">
+                        <image-point name="Imagepoint 1" x="0.973333" y="0.415094" />
+                        <image-point name="Imagepoint 2" x="0.853333" y="0.320755" />
+                        <image-point name="Imagepoint 3" x="0.266667" y="0.566038" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.528302" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0005_espada_4.png">
+                        <image-point name="Imagepoint 1" x="0.84" y="0.490566" />
+                        <image-point name="Imagepoint 2" x="0.773333" y="0.169811" />
+                        <image-point name="Imagepoint 3" x="0.48" y="0.415094" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.490566" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0004_espada_5.png">
+                        <image-point name="Imagepoint 1" x="0.986667" y="0.396226" />
+                        <image-point name="Imagepoint 2" x="0.653333" y="0.716981" />
+                        <image-point name="Imagepoint 3" x="0.506667" y="0.509434" />
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.509434" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0003_espada_6.png">
+                        <image-point name="Imagepoint 1" x="0.853333" y="0.509434" />
+                        <image-point name="Imagepoint 2" x="0.693333" y="0.339623" />
+                        <image-point name="Imagepoint 3" x="0.253333" y="0.603774" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.64" hotspotY="0.528302" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0002_espada_7.png">
+                        <image-point name="Imagepoint 1" x="0.84" y="0.509434" />
+                        <image-point name="Imagepoint 2" x="0.586667" y="0.490566" />
+                        <image-point name="Imagepoint 3" x="0.16" y="0.264151" />
+                    </frame>
+                    <frame duration="2" hotspotX="0.506667" hotspotY="0.509434" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0001_Camada-2.png">
+                        <image-point name="Imagepoint 1" x="0.506667" y="0.584906" />
+                        <image-point name="Imagepoint 2" x="0.533333" y="0.45283" />
+                        <image-point name="Imagepoint 3" x="0.6" y="0.377358" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.509434" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0000_Camada-2-copiar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="214857483416480">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Camera" sid="474903657443408">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="900153001897793">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745109842752377" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Jimmy" sid="424908920015614">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="IDLE_Jimmy" pingpong="0" repeatcount="1" repeatto="0" sid="389420675740515" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\IDLE\IDLE_0000_sprite_4.png">
+                        <collision-poly>
+                            <point x="0.821429" y="1" />
+                            <point x="0.232143" y="1" />
+                            <point x="0.232143" y="0.08" />
+                            <point x="0.375" y="0.106667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\IDLE\IDLE_0001_sprite_3.png">
+                        <collision-poly>
+                            <point x="0.821429" y="1" />
+                            <point x="0.232143" y="1" />
+                            <point x="0.232143" y="0.08" />
+                            <point x="0.375" y="0.106667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\IDLE\IDLE_0002_sprite_2.png">
+                        <collision-poly>
+                            <point x="0.857143" y="1" />
+                            <point x="0.267857" y="1" />
+                            <point x="0.232143" y="0.486667" />
+                            <point x="0.232143" y="0.08" />
+                            <point x="0.375" y="0.106667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\IDLE\IDLE_0003_Camada-1.png">
+                        <collision-poly>
+                            <point x="0.821429" y="1" />
+                            <point x="0.232143" y="1" />
+                            <point x="0.232143" y="0.08" />
+                            <point x="0.375" y="0.106667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Grito_Jimmy" pingpong="0" repeatcount="1" repeatto="0" sid="767227572411357" speed="5">
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.506329" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\Screming\Screming_0000_sprite_10.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.506329" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\Screming\Screming_0001_sprite_9.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="2" hotspotX="0.493333" hotspotY="0.506329" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\Screming\Screming_0002_sprite_8.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.506329" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Jimmy\Screming\Screming_0003_Camada-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gamepad" sid="264317239931309">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Cano_01" sid="460173807143028">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="568609638815582" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293332800908664" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_22.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="941597626335830" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_23.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_03" sid="145840533276229">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="525954759578345" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499372478896398" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_18.png">
+                        <collision-poly>
+                            <point x="0.352941" y="0.352941" />
+                            <point x="0.470588" y="0.294118" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0.294118" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="646727340535238" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_19.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_02" sid="674151883809584">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="183207916841174" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681185325422067" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_20.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="846626179661151" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_04" sid="755400290841318">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="372535942849109" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495496428476832" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_16.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="0.705882" />
+                            <point x="0.352941" y="0.647059" />
+                            <point x="0.294118" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="542229289947536" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_17.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_05" sid="685614135355140">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="168972039583781" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245642883678983" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_14.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="0.705882" y="0.470588" />
+                            <point x="0.647059" y="0.647059" />
+                            <point x="0.470588" y="0.705882" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="567954358369565" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_15.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_06" sid="388357201243245">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Correct" sid="265218631218736" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250807259442370" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_12.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0.294118" />
+                            <point x="0.647059" y="0.352941" />
+                            <point x="0.705882" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="519845711832928" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_13.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_07" sid="956485302974967">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680652624213726" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_08.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="908198271200007" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_11.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="First" pingpong="0" repeatcount="1" repeatto="0" sid="780768917648722" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_09.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Last" pingpong="0" repeatcount="1" repeatto="0" sid="157171934800208" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_08" sid="621113230432092">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508882137167420" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_06.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="0.705882" y="0.470588" />
+                            <point x="0.764706" y="0.764706" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.235294" y="0.764706" />
+                            <point x="0.294118" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="256218487788535" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_07.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_09" sid="346533528785379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733000962484270" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_04.png">
+                        <collision-poly>
+                            <point x="0.235294" y="0.235294" />
+                            <point x="0.470588" y="0.294118" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="0.705882" />
+                            <point x="0.235294" y="0.764706" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="298630628088648" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_10" sid="618124220545362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138731504261598" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_02.png">
+                        <collision-poly>
+                            <point x="0.235294" y="0.235294" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.764706" y="0.235294" />
+                            <point x="0.705882" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0.294118" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="123734023960370" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_11" sid="811054990376439">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396962841567685" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_00.png">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.470588" y="0.294118" />
+                            <point x="0.764706" y="0.235294" />
+                            <point x="0.941176" y="0.470588" />
+                            <point x="0.764706" y="0.764706" />
+                            <point x="0.470588" y="0.705882" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="405178459706975" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MAchine" sid="587343750734392">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351990737564038" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500664" original-source="E:\canal\Lixoeira\cogs-gears-inside-machine-14915575.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="248945149769411">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Burn">
+                    <effect id="burn" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483778496155782" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_12" sid="677548093253494">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="0- Oleo 1-Agua" name="Material" sid="209893876748042" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="107833861595342">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="330637979645553">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Anchor" sid="818711269718400">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="471308730987904" speed="0">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.411765">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.411765">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.411765">
+                        <collision-poly>
+                            <point x="0.294118" y="0.294118" />
+                            <point x="0.705882" y="0.294118" />
+                            <point x="1" y="0.470588" />
+                            <point x="0.705882" y="0.705882" />
+                            <point x="0.470588" y="1" />
+                            <point x="0.294118" y="0.705882" />
+                            <point x="0" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Full" pingpong="0" repeatcount="1" repeatto="0" sid="936719025988709" speed="5">
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.352941" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Cano_25.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="539970964963884">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843735929679910" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="911861295805526">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch" sid="691347647975307">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type global="1" name="ShadowLight" sid="196337830787453">
+            <plugin id="shadowlight" />
+        </object-type>
+        <object-type name="Sprite4" sid="695505433265236">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453901919540658" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Luz" sid="379822852083483">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="862408523241280" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Light" sid="932410485607659">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680635756759112" speed="5">
+                    <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Light.png">
+                        <collision-poly>
+                            <point x="0.382323" y="0.380368" />
+                            <point x="0.499486" y="0.332311" />
+                            <point x="0.617677" y="0.380368" />
+                            <point x="0.668037" y="0.5" />
+                            <point x="0.618705" y="0.620654" />
+                            <point x="0.499486" y="0.669734" />
+                            <point x="0.380267" y="0.621677" />
+                            <point x="0.329908" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Maquina" sid="629225492804849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="796362684400109" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Maquina_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Maquina_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Reservatorio" sid="522901357265090">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396107294560011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\Reservatorio_1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mesa" sid="374209236155224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466587391742184" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="306694077922783">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="513860807470199">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155681647144731" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.388889">
+                        <collision-poly>
+                            <point x="0.520833" y="0.0347222" />
+                            <point x="0.972222" y="0.465278" />
+                            <point x="0.659723" y="0.520834" />
+                            <point x="0.555556" y="0.913195" />
+                            <point x="0.472222" y="0.583334" />
+                            <point x="0.163194" y="0.520834" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LugarCerto" sid="796119482743603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458675138273416" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Alavanca" sid="472697318999547">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="MyBoolean" sid="645343341675769" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Ativo" pingpong="0" repeatcount="1" repeatto="0" sid="140208505814247" speed="10">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                </animation>
+                <animation framecount="3" loop="0" name="Desativar" pingpong="0" repeatcount="1" repeatto="0" sid="267526733404097" speed="10">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.517241" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="673150494894137">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="390398254426675">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="807976781709799">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Sprite6" sid="801197698031404">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="293576366201954">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="937258871802440">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378440054819724" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.976001" />
+                            <point x="0.112" y="0.96" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.036" />
+                            <point x="0.132" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="preto" sid="189677370536687">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="789107322986448">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373005771882942" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Filtro" sid="846047138305392">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="268584904048613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\filtro_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Downloads\Cara\Minigames\Cano\filtro_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_13" sid="215736757015169">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269872679002045" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\LAB4M10\Desktop\Projeto-Jogo\Minigames\Cano\Cano_24.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDCanos" sid="814523349675803">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Exposure">
+                    <effect id="exposure" />
+                </effect-type>
+                <effect-type name="Sharpen">
+                    <effect id="sharpen" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506126533833685" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_14" sid="834231111875529">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Material" sid="424037339436807" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="448516181555656">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="699041777731132">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Anchor" sid="735544754199988">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431127130377901" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\Cano\Cano_16.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_15" sid="985573702822417">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Material" sid="818027196553376" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="925862093063727">
+                    <behavior id="Anchor" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="169723807013068">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="356327099462050">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731443401013061" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\Cano\Cano_22.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano_16" sid="664930736262452">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Material" sid="394963038818489" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="892887328128511">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Anchor" sid="466933001008926">
+                    <behavior id="Anchor" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="995921123652214">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="649474774456052" speed="0">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\Cano\Cano_08.png" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="153784817555238">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground4" sid="368627363923562">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="159443506633027">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground5" sid="614470592289386">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground6" sid="156814293860804">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="515511712754215">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground7" sid="762531826047793">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="489866378697564">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground8" sid="383891639688012">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground9" sid="868503235186799">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite7" sid="633062659172680">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138913211654587" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.529412" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\Cano\Cano_02.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="290234719290608">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="761480785280194">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991664804933817" speed="5">
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\porta_0004_porta-0.png">
+                        <collision-poly>
+                            <point x="0.589623" y="1" />
+                            <point x="0.433963" y="0.991379" />
+                            <point x="0.43868" y="0.288793" />
+                            <point x="0.5" y="0.284483" />
+                            <point x="0.584906" y="0.280172" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\porta_0003_porta--1.png">
+                        <collision-poly>
+                            <point x="0.589622" y="0.840517" />
+                            <point x="0.448113" y="0.836207" />
+                            <point x="0.443396" y="0.310345" />
+                            <point x="0.570755" y="0.306034" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\porta_0001_porta-3.png">
+                        <collision-poly>
+                            <point x="0.608491" y="0.905173" />
+                            <point x="0.448113" y="0.915948" />
+                            <point x="0.448114" y="0.193966" />
+                            <point x="0.608491" y="0.247845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\porta_0000_porta-4.png">
+                        <collision-poly>
+                            <point x="0.603773" y="0.788793" />
+                            <point x="0.495283" y="0.797413" />
+                            <point x="0.429246" y="0.797413" />
+                            <point x="0.424529" y="0.353448" />
+                            <point x="0.599056" y="0.349138" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground10" sid="969668538140742">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite9" sid="702159952686544">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="445621087231863">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776058829940352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\canal\Lixoeira\waltersla.png">
+                        <collision-poly>
+                            <point x="0.345833" y="0.118519" />
+                            <point x="0.6625" y="0.111111" />
+                            <point x="0.654167" y="0.755555" />
+                            <point x="0.4125" y="0.740741" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="149374055703181">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="615261907924102">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621343968891853" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\canal\Lixoeira\sdcasdd.png">
+                        <collision-poly>
+                            <point x="0.38125" y="0.0148148" />
+                            <point x="0.534375" y="0.0555556" />
+                            <point x="0.54427" y="0.238889" />
+                            <point x="0.704167" y="0.125926" />
+                            <point x="0.720834" y="0.618519" />
+                            <point x="0.59375" y="0.688889" />
+                            <point x="0.626042" y="0.87963" />
+                            <point x="0.608334" y="1" />
+                            <point x="0.270833" y="0.948148" />
+                            <point x="0.234375" y="0.537037" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Block" sid="737114572580971">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743346339900871" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="agua" sid="430704629903926">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159810724749901" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="agua2" sid="429135087669865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610026834066526" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="705375863472571">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492644937372941" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\chão.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="573305370852262">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485036513608161" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\caverna.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="614926758082415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389314022280571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\caverna.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="147612292667430">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507400542381942" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\caverna.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="813690468104590">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562936549376041" speed="5">
+                    <frame duration="1" hotspotX="0.500334" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\parede.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="966094821716676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="678497607957602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\lampada.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="116518439852740">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179205427022040" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\lampada.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gvilao1" sid="955547198344460">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="122092752627923" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0005_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0004_Camada-2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0003_Camada-3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0002_Camada-4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0001_Camada-5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Walk\GWalk_0000_Camada-6.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="803956135310735" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\IDLE\idle_0004_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\IDLE\idle_0003_Camada-2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\IDLE\idle_0002_Camada-3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\IDLE\idle_0001_Camada-4.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="ATKS1" pingpong="0" repeatcount="1" repeatto="0" sid="780382160331271" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0006_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0005_Camada-2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0004_Camada-3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0003_Camada-4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0002_Camada-5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\ATK\ATKS\solo_0001_Camada-6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="MORTE" pingpong="0" repeatcount="1" repeatto="0" sid="202018522675989" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Morte\morte_6.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="DANO" pingpong="0" repeatcount="1" repeatto="0" sid="376394106059064" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Dano\dano_1.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Dano\dano_2.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Dano\dano_3.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenG\Dano\dano_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gvilao2" sid="704533514705720">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="UP" pingpong="0" repeatcount="1" repeatto="0" sid="400705782595997" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\Drop\Drop_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\Drop\Drop_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\Drop\Drop_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\Drop\Drop_4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="685513190222884" speed="6">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\IDLE\IDLE_1.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\IDLE\IDLE_2.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\IDLE\IDLE_3.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\IDLE\IDLE_4.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="WALK" pingpong="0" repeatcount="1" repeatto="0" sid="521526977918780" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\WALK\Walk_6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="ATKBAIXO" pingpong="0" repeatcount="1" repeatto="0" sid="930206362461126" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\BAIXO\Baixo_6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="ATKCIMAW" pingpong="0" repeatcount="1" repeatto="0" sid="897140895649980" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA+WALK\CIMA_6.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="ATKCIMA" pingpong="0" repeatcount="1" repeatto="0" sid="299607359524659" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Viloes\GolenSUP\ATK\CIMA\CIMA_6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="541256760960789">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="826170635638890">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="536380917703247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="673597723985072">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768936049458149" speed="5">
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.5" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Minigames\caminhos\grade.png">
+                        <collision-poly>
+                            <point x="1" y="0.758621" />
+                            <point x="0.0188679" y="0.758621" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bolinha" sid="110366928906288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758011567441475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bolinha2" sid="701303414532495">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662429877616403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bolinha3" sid="452400959616268">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="536154632213264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="233056936493837">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Atk1" sid="583593520956857" type="boolean" />
+                <instance-variable name="Atk2" sid="111191237692731" type="boolean" />
+                <instance-variable name="Running" sid="296257955575388" type="boolean" />
+                <instance-variable name="Down" sid="503464086258233" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="779814050541891">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="435126149736895">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863513957420048" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Animation" sid="103600961802250">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="212097612038810" speed="7">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Idle\idle_0000_Camada-5.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Idle\idle_0001_Camada-4.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Idle\idle_0002_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Idle\idle_0003_Camada-3.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="WALK" pingpong="0" repeatcount="1" repeatto="0" sid="191065897948542" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0007_Camada-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0006_Walk_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0005_Walk_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0004_Walk_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0003_Walk_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0002_Walk_6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0001_Walk_7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Walk\SSWalk_0000_Walk_8.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="JUMP" pingpong="0" repeatcount="1" repeatto="0" sid="730793537885720" speed="8">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Jump\Jump_0000_Camada-2.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Jump\Jump_0001_Pulado_3.png" />
+                    <frame duration="3" hotspotX="0.513514" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Jump\Jump_0002_Pulado_2.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="DOWN" pingpong="0" repeatcount="1" repeatto="0" sid="486816678108716" speed="11">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Abaixar\baixar_3.png" />
+                </animation>
+                <animation framecount="7" loop="0" name="ATK1" pingpong="0" repeatcount="1" repeatto="0" sid="704658674779307" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0006_Camada-6.png">
+                        <image-point name="Imagepoint 1" x="0.25" y="0.46" />
+                        <image-point name="Imagepoint 2" x="0.266667" y="0.38" />
+                        <image-point name="Imagepoint 3" x="0.316667" y="0.32" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0005_Camada-7.png">
+                        <image-point name="Imagepoint 1" x="0.0833333" y="0.48" />
+                        <image-point name="Imagepoint 2" x="0.2" y="0.42" />
+                        <image-point name="Imagepoint 3" x="0.283333" y="0.34" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0004_Camada-8.png">
+                        <image-point name="Imagepoint 1" x="0.333333" y="0.16" />
+                        <image-point name="Imagepoint 2" x="0.25" y="0.3" />
+                        <image-point name="Imagepoint 3" x="0.366667" y="0.32" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0003_Camada-9.png">
+                        <image-point name="Imagepoint 1" x="0.7" y="0.2" />
+                        <image-point name="Imagepoint 2" x="0.666667" y="0.34" />
+                        <image-point name="Imagepoint 3" x="0.55" y="0.34" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0002_Camada-10.png">
+                        <image-point name="Imagepoint 1" x="0.9" y="0.4" />
+                        <image-point name="Imagepoint 2" x="0.733333" y="0.38" />
+                        <image-point name="Imagepoint 3" x="0.616667" y="0.34" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0001_Camada-12.png">
+                        <image-point name="Imagepoint 1" x="0.933333" y="0.4" />
+                        <image-point name="Imagepoint 2" x="0.783333" y="0.4" />
+                        <image-point name="Imagepoint 3" x="0.666667" y="0.36" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Soco\Soquinho_0000_Camada-11.png">
+                        <image-point name="Imagepoint 1" x="0.6" y="0.6" />
+                        <image-point name="Imagepoint 2" x="0.683333" y="0.54" />
+                        <image-point name="Imagepoint 3" x="0.7" y="0.42" />
+                    </frame>
+                </animation>
+                <animation framecount="9" loop="1" name="ATK2" pingpong="0" repeatcount="1" repeatto="0" sid="537952635564154" speed="15">
+                    <frame duration="2" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0008_Camada-1.png">
+                        <image-point name="Imagepoint 1" x="0.386667" y="0.471698" />
+                        <image-point name="Imagepoint 2" x="0.346667" y="0.377358" />
+                        <image-point name="Imagepoint 3" x="0.426667" y="0.301887" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0007_espada_2.png">
+                        <image-point name="Imagepoint 1" x="0.493333" y="0.433962" />
+                        <image-point name="Imagepoint 2" x="0.56" y="0.339623" />
+                        <image-point name="Imagepoint 3" x="0.64" y="0.301887" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0006_espada_3.png">
+                        <image-point name="Imagepoint 1" x="0.973333" y="0.45283" />
+                        <image-point name="Imagepoint 2" x="0.16" y="0.264151" />
+                        <image-point name="Imagepoint 3" x="0.293333" y="0.660377" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0005_espada_4.png">
+                        <image-point name="Imagepoint 1" x="0.84" y="0.283019" />
+                        <image-point name="Imagepoint 2" x="0.426667" y="0.0566038" />
+                        <image-point name="Imagepoint 3" x="0.826667" y="0.528302" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0004_espada_5.png">
+                        <image-point name="Imagepoint 1" x="0.973333" y="0.45283" />
+                        <image-point name="Imagepoint 2" x="0.626667" y="0.716981" />
+                        <image-point name="Imagepoint 3" x="0.533333" y="0.339623" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0003_espada_6.png">
+                        <image-point name="Imagepoint 1" x="0.853333" y="0.528302" />
+                        <image-point name="Imagepoint 2" x="0.506667" y="0.867925" />
+                        <image-point name="Imagepoint 3" x="0.226667" y="0.528302" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0002_espada_7.png">
+                        <image-point name="Imagepoint 1" x="0.853333" y="0.509434" />
+                        <image-point name="Imagepoint 2" x="0.08" y="0.433962" />
+                        <image-point name="Imagepoint 3" x="0.426667" y="0.150943" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0001_Camada-2.png">
+                        <image-point name="Imagepoint 1" x="0.52" y="0.54717" />
+                        <image-point name="Imagepoint 2" x="0.546667" y="0.377358" />
+                        <image-point name="Imagepoint 3" x="0.6" y="0.396226" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="1" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Atk\Espada\espada_1_0000_Camada-2-copiar.png">
+                        <image-point name="Imagepoint 1" x="0.373333" y="0.471698" />
+                        <image-point name="Imagepoint 2" x="0.386667" y="0.377358" />
+                        <image-point name="Imagepoint 3" x="0.44" y="0.339623" />
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="DEATH" pingpong="0" repeatcount="1" repeatto="0" sid="266420665419128" speed="10">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0004_morte_2.png" />
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0003_Camada-1.png" />
+                    <frame duration="2" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0002_morte_3.png" />
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0001_Camada-2.png" />
+                    <frame duration="3" hotspotX="0.504274" hotspotY="0.513514" original-source="C:\Users\Megas-XRL8\Desktop\Etec\PTCC\Projeto-Jogo\Super Shock\Morte\morte_0000_morte_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Retangulo" sid="383780107850756">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501255148022701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Retangulo2" sid="903146784441008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218282087844240" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Retangulo3" sid="925503378311417">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633430349729457" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Rotate" plugin-id="Sprite" sid="754887269506674">
+            <members>
+                <member>Cano_01</member>
+                <member>Cano_02</member>
+                <member>Cano_03</member>
+                <member>Cano_04</member>
+                <member>Cano_05</member>
+                <member>Cano_06</member>
+                <member>Cano_12</member>
+            </members>
+        </family>
+        <family name="Shake" plugin-id="Sprite" sid="195019574138479">
+            <members>
+                <member>Cano_01</member>
+                <member>Cano_02</member>
+                <member>Cano_03</member>
+                <member>Cano_04</member>
+                <member>Cano_05</member>
+                <member>Cano_06</member>
+                <member>Cano_07</member>
+                <member>Cano_08</member>
+                <member>Cano_09</member>
+                <member>Cano_10</member>
+                <member>Cano_11</member>
+                <member>Cano_12</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="561705032972135">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Steps" plugin-id="Sprite" sid="306293361351259">
+            <members>
+                <member>Sprite6</member>
+            </members>
+        </family>
+        <family name="Family1" plugin-id="Sprite" sid="420327594063041">
+            <members>
+                <member>agua</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Cano1.xml</layout>
+        <layout>Cano2.xml</layout>
+        <layout>minigame caminho.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Cano1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Gamepad" uid="5">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="40" />
+        <global-instance type="Touch" uid="41">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

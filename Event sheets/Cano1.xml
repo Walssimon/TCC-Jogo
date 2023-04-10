@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cano1</name>
+    <events>
+        <variable constant="0" name="ONOFF" sid="996233130543368" static="0" type="text">ON</variable>
+        <variable comment="0- Teclado 1-Gamepad" constant="0" name="GAMEPAD" sid="719779478541011" static="0" type="number">0</variable>
+        <variable constant="0" name="Level_1_Total" sid="582082172597785" static="0" type="number">11</variable>
+        <variable constant="0" name="Water_Level" sid="144956971747202" static="0" type="number">0</variable>
+        <variable constant="0" name="Speed" sid="557287474710427" static="0" type="number">0</variable>
+        <variable constant="0" name="GameOn" sid="377500397171003" static="0" type="number">0</variable>
+        <event-group description="" sid="102029835302120" title="Gamepad3">
+            <sub-events>
+                <event-block sid="278563609221559">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="986951640024717" type="System" />
+                        <condition id="-14" name="Compare variable" sid="532734142179052" type="System">
+                            <param id="0" name="Variable">GAMEPAD</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="946777991004710" type="Sprite5">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="955652786559519">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="852884639436988" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="636514843710577" type="Sprite5">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794879116866627">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="482831931796397" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="147251000158978" type="Sprite5">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="155683249294420">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="526742511724766" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="191243942045871" type="Sprite5">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="271684606544480">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="497684975452873" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="410897484076386" type="Sprite5">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="183500607250651">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="401862555100948" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="673328427519879" type="Sprite5">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="899235619368884">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="807512609249989" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="150159519176885" type="Sprite5">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="391242074049494">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="228950965926033" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="230470127267401" type="Sprite5">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="960318322702445">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="685967387831491" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="438070916223519" type="Sprite5">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="236066440722009" title="On Start Of Level">
+            <sub-events>
+                <event-block sid="539697651516557">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="212217769100689" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="963654416269733" type="System" />
+                        <action id="-15" name="Set visible" sid="250243894705310" type="Family1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="552552724997482" title="System">
+            <sub-events>
+                <event-group description="" sid="706118815021923" title="Game win">
+                    <sub-events>
+                        <event-block sid="571986698834895">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="943074694122481" type="LugarCerto">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="740221121479985" type="Alavanca">
+                                    <param id="0" name="Instance variable">MyBoolean</param>
+                                </condition>
+                                <condition behavior="DragDrop" id="3" name="Is enabled" sid="826255154908516" type="Cano_14" />
+                                <condition id="-7" name="Compare instance variable" sid="895721120963034" type="Cano_14">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="698009374629776" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-11" name="Is within angle" sid="120349951272628" type="Cano_14">
+                                    <param id="0" name="Within">0</param>
+                                    <param id="1" name="Angle">180</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="582874391585485" type="System">
+                                    <param id="0" name="Variable">GameOn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="214027879920286" title="Wather">
+                    <sub-events>
+                        <event-block sid="730789926422058">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="453835453324619" type="System" />
+                                <condition id="-14" name="Compare variable" sid="866778058049981" type="System">
+                                    <param id="0" name="Variable">GameOn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="698658168459659" type="Family1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="911408223278471">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="120931300427085" type="System">
+                                    <param id="0" name="Variable">Water_Level</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">2108</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="242750873425977" type="System">
+                                    <param id="0" name="Variable">Level_1_Total</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="515716092430282" type="System">
+                                    <param id="0" name="Variable">GameOn</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="178867690605134" type="System">
+                                    <param id="0" name="Variable">Water_Level</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="887216108624295">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="485690137385678" type="Cano_11">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="556785520628250" type="System">
+                                    <param id="0" name="Variable">GameOn</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="646784730234692" type="System">
+                                    <param id="0" name="Variable">Water_Level</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Essa é a razão por ter criado uma familia com o nome Rotate" disabled="1" sid="855109756197995" title="On Start Of Level Rotate Pipework">
+                    <sub-events>
+                        <event-block disabled="1" sid="461648517468824">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="421225536473607" type="System" />
+                                <condition id="-11" name="For Each" sid="134987010908052" type="System">
+                                    <param id="0" name="Object">Rotate</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="256965320568962" type="Rotate">
+                                    <param id="0" name="Angle">-90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Essa é a razão do porque a familia é chamada Rotate" disabled="1" sid="356046400020348" title="When Tocheded Rotate Pipework">
+                    <sub-events>
+                        <event-block sid="486558366805462">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="537412844644224" type="Touch">
+                                    <param id="0" name="Object">Rotate</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="290298325252717" type="Rotate">
+                                    <param id="0" name="Angle">round(Self.Angle+90)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" disabled="1" sid="681306544088627" title="Gamepad2">
+                    <sub-events>
+                        <event-block sid="459495597191518">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="183152264827582" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="270505437217988" type="Nick">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="610323781733240">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="520398851565079" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="212491256086940" type="Nick">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="296534925841806">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="746678771655319" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="951632332809233" type="Nick">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="916628258294115">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="673546972971404" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="761539014546240" type="Nick">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="643799642085578">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="525202407775708" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">11</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="789659729425005" type="Keyboard">
+                                    <param id="0" name="Key">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="281008638881127" type="Nick">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="805841425233887">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="360143654766444" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="731305170252744" type="Nick">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="174098421579837">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="754801928774280" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="385343165380888" type="Nick">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="824244643649466">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="821747158235711" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="936918756219762" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="279344359950073" type="Nick">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="305779613763906">
+                            <conditions>
+                                <condition id="7" name="On button released" sid="845650554040788" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="260827494849275" type="Nick">
+                                    <param id="0" name="Instance variable">Running</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="726163358846046" title="When The Pip Start Shake">
+                    <sub-events>
+                        <event-block sid="665247584975718">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="167970095294448" type="System">
+                                    <param id="0" name="Variable">Level_1_Total</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="337951183292194" type="System">
+                                    <param id="0" name="Variable">Water_Level</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="774583248557400" type="Shake">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="212984847062512">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="815366823763841" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="974400557357694" type="Shake">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="813488346953222">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="720412042016682" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Alavanca</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-14" name="Toggle boolean" sid="417027599909508" type="Alavanca">
+                    <param id="0" name="Instance variable">MyBoolean</param>
+                </action>
+                <action id="4" name="Set animation" sid="281677431282010" type="Alavanca">
+                    <param id="0" name="Animation">&quot;Ativo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="404708102311910" type="Alavanca">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block disabled="1" sid="115977130964301">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="964525415099291" type="Alavanca">
+                            <param id="0" name="Instance variable">MyBoolean</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block disabled="1" sid="743267747511143">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="651247354616211" type="Alavanca">
+                            <param id="0" name="Instance variable">MyBoolean</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="642326507437546" type="Alavanca">
+                            <param id="0" name="Animation">&quot;Ativo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="975944582112210" type="Alavanca">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="506306580692351" type="Alavanca">
+                            <param id="0" name="Instance variable">MyBoolean</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="547502325387427">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="614268524629837" type="Alavanca">
+                    <param id="0" name="Instance variable">MyBoolean</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-group description="" sid="851027643278133" title="Cano12">
+                    <sub-events>
+                        <event-block sid="236782738383363">
+                            <conditions>
+                                <condition id="0" name="On click" sid="494236675186316" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="699430863939075" type="Mouse">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="196849589744254" type="HUDCanos">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="799301089241889" type="Cano_12">
+                                    <param id="0" name="Object">Cano_12</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="644272040979557">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="687662967424892" type="Cano_12" />
+                                <condition id="1" name="Is overlapping another object" sid="267950977161752" type="Cano_12">
+                                    <param id="0" name="Object">MAchine</param>
+                                </condition>
+                                <condition disabled="1" id="2" inverted="1" name="Mouse button is down" sid="585174637669862" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="964076998664455" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="570500331906500" type="Cano_12" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="100782948449904">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="945488270724374" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="2" name="Mouse button is down" sid="881046442014335" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="923465690656424" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action disabled="1" id="5" name="Set frame" sid="410296573281148" type="Cano_12">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="1" name="Drop" sid="229218294072783" type="Cano_12" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="388577397372511">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="103975980640091" type="Mouse">
+                                    <param id="0" name="Mouse button">2</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_12</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="595687812191127" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="827881606209316" type="Cano_12">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="647874077099970" type="Mouse">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="544586928463769" type="Mouse">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="778512164647733" type="Cano_12">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="844521770627096" type="Cano_12">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="139115780688949" type="Cano_12">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="865156835680585">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="258246714285326" type="Mouse">
+                                    <param id="0" name="Mouse button">1</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_12</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="609569150463751" type="Mouse">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="792841386272722" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="419713426963382" type="Cano_12">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="732383179607073" type="Mouse">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="840564014664698" type="Cano_12">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="479381150271847" type="Cano_12">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="127058717023612" type="Cano_12">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="719862085084511">
+                            <conditions>
+                                <condition id="0" name="On click" sid="312323550199110" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="170972591578291" type="Mouse">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="464670104373359" type="Cano_12">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Rotate clockwise" sid="910198574778949" type="Cano_12">
+                                    <param id="0" name="Degrees">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="688255755939058" title="Cano14">
+                    <sub-events>
+                        <event-block sid="142286323021491">
+                            <conditions>
+                                <condition id="0" name="On click" sid="529279381543294" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="712435309711966" type="Sprite5">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="931805656466767" type="Mouse">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="758703866396912" type="Sprite5">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="159728166237604" type="Cano_14">
+                                    <param id="0" name="Object">Cano_14</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">32</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="513518526597725">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="686112602441580" type="Cano_14" />
+                                <condition id="1" name="Is overlapping another object" sid="203924592203715" type="Cano_14">
+                                    <param id="0" name="Object">MAchine</param>
+                                </condition>
+                                <condition disabled="1" id="2" inverted="1" name="Mouse button is down" sid="341513078601637" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="546890482523202" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="475351635623955" type="Cano_14" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="640896266327047">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="996161528419976" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="2" name="Mouse button is down" sid="224167620891117" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="407687274467667" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action disabled="1" id="5" name="Set frame" sid="276926211142285" type="Cano_12">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="1" name="Drop" sid="329856706729935" type="Cano_14" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="562437415385131">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="572298864823392" type="Mouse">
+                                    <param id="0" name="Mouse button">1</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_14</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="653782046246441" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="148383772163289" type="Cano_14">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="280266250805640" type="Mouse">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="359808695634407" type="Mouse">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="679356230406997" type="Cano_14">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="582476701852842" type="Cano_14">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="110161436507155" type="Cano_14">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="798163584607771">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="914553819461519" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_14</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="321289195602907" type="Mouse">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="238867923984521" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="696396758037306" type="Cano_14">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="536168389337532" type="Mouse">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="171279822600968" type="Cano_14">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="594141839491592" type="Cano_14">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="676367439679332" type="Cano_14">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="288169200670928">
+                            <conditions>
+                                <condition id="0" name="On click" sid="154077280130833" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="631198845220771" type="Mouse">
+                                    <param id="0" name="Object">Cano_14</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="548321336836741" type="Cano_14">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Rotate clockwise" sid="606299520417652" type="Cano_14">
+                                    <param id="0" name="Degrees">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="300856700835681" title="Cano15">
+                    <sub-events>
+                        <event-block sid="529934574894086">
+                            <conditions>
+                                <condition id="0" name="On click" sid="299777543601064" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="101834480517097" type="Sprite5">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="142719886229178" type="Mouse">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="571836750852955" type="Sprite5">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="122714879280194" type="Cano_15">
+                                    <param id="0" name="Object">Cano_15</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">32</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="899795225975940">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="665823718318900" type="Cano_15" />
+                                <condition id="1" name="Is overlapping another object" sid="753553915880236" type="Cano_15">
+                                    <param id="0" name="Object">MAchine</param>
+                                </condition>
+                                <condition disabled="1" id="2" inverted="1" name="Mouse button is down" sid="418096082712201" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="200147310167123" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="381682751506746" type="Cano_15" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="198918737274701">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="582094448447408" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="2" name="Mouse button is down" sid="266844259149508" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="516953410997859" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action disabled="1" id="5" name="Set frame" sid="861015484578888" type="Cano_12">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="1" name="Drop" sid="672263664147793" type="Cano_15" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="949030518397932">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="736212995056998" type="Mouse">
+                                    <param id="0" name="Mouse button">1</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_15</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="820142440476221" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="319506331490363" type="Cano_15">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="217055944563540" type="Mouse">
+                                    <param id="0" name="Object">Cano_15</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="790109637921697" type="Mouse">
+                                    <param id="0" name="Object">Cano_15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="944457254667329" type="Cano_15">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="531546016777590" type="Cano_15">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="467302535674632" type="Cano_15">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="904808203206271">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="297682688837304" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_15</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="564881790151162" type="Mouse">
+                                    <param id="0" name="Object">Cano_15</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="449459133118239" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="489552860083909" type="Cano_15">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="893279310809230" type="Mouse">
+                                    <param id="0" name="Object">Cano_15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="781020029242787" type="Cano_15">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="904834379007114" type="Cano_15">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="184766567276646" type="Cano_15">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="207490966753793">
+                            <conditions>
+                                <condition id="0" name="On click" sid="797950550449508" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="846164322721586" type="Mouse">
+                                    <param id="0" name="Object">Cano_15</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="801433742095584" type="Cano_15">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Rotate clockwise" sid="212290526735445" type="Cano_15">
+                                    <param id="0" name="Degrees">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="117253113018438" title="Cano16">
+                    <sub-events>
+                        <event-block sid="328879131568285">
+                            <conditions>
+                                <condition id="0" name="On click" sid="871364347791954" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="521652900358073" type="Sprite5">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="298532742733317" type="Mouse">
+                                    <param id="0" name="Object">HUDCanos</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="678866174391975" type="Sprite5">
+                                    <param id="0" name="Object">Cano_12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="506492856560592" type="Cano_16">
+                                    <param id="0" name="Object">Cano_16</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">32</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="811820184570214">
+                            <conditions>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="789557033076869" type="Cano_16" />
+                                <condition id="1" name="Is overlapping another object" sid="895412144552004" type="Cano_16">
+                                    <param id="0" name="Object">MAchine</param>
+                                </condition>
+                                <condition disabled="1" id="2" inverted="1" name="Mouse button is down" sid="994620379172114" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="809322462380986" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="904191028941807" type="Cano_16" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="874410850092915">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="802408398565793" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="2" name="Mouse button is down" sid="883174637148876" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="707020328134934" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action disabled="1" id="5" name="Set frame" sid="601131429652738" type="Cano_12">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="1" name="Drop" sid="862950876472561" type="Cano_16" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="849494923212103">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="967577573088182" type="Mouse">
+                                    <param id="0" name="Mouse button">1</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_16</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="311780234140752" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="346688059870656" type="Cano_16">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="840950574125730" type="Mouse">
+                                    <param id="0" name="Object">Cano_16</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="752879274550491" type="Mouse">
+                                    <param id="0" name="Object">Cano_16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="367764250942775" type="Cano_16">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="459360777182999" type="Cano_16">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="917884805481062" type="Cano_16">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="600231048876440">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="786564856614165" type="Mouse">
+                                    <param id="0" name="Mouse button">2</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Cano_16</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="676412326962268" type="Mouse">
+                                    <param id="0" name="Object">Cano_16</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="642763841999745" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="509277763262218" type="Cano_16">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="293936035620609" type="Mouse">
+                                    <param id="0" name="Object">Cano_16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="960211736579618" type="Cano_16">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="490224569955819" type="Cano_16">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.5</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="702591216229785" type="Cano_16">
+                                    <param id="0" name="Instance variable">Material</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="474975501648631">
+                            <conditions>
+                                <condition id="0" name="On click" sid="511497837076769" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="879586964629403" type="Mouse">
+                                    <param id="0" name="Object">Cano_16</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="938317592685257" type="Cano_16">
+                                    <param id="0" name="Object">LugarCerto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Rotate clockwise" sid="675391103917775" type="Cano_16">
+                                    <param id="0" name="Degrees">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+        <event-block sid="932514451219259">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="730182931155028" type="Alavanca">
+                    <param id="0" name="Instance variable">MyBoolean</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="770480314331245" type="System">
+                    <param id="0" name="Variable">ONOFF</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;OFF&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="408919394094875" type="System">
+                    <param id="0" name="Variable">ONOFF</param>
+                    <param id="1" name="Value">&quot;ON&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="461467942152112">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="924928145024917" type="Alavanca">
+                    <param id="0" name="Instance variable">MyBoolean</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="666415358996355" type="preto">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="204362409369263" type="preto">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="664345405869984" type="Cano_12">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="882527553628591" type="Cano_14">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="126754328563565" type="Cano_15">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="892438912709026" type="Cano_16">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="928235762193256">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="315337373096612" type="Alavanca">
+                    <param id="0" name="Instance variable">MyBoolean</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="347225516839557" type="preto">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="5" name="Set frame" sid="236515191829739" type="preto">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="545891234659238" type="Cano_12">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="686339377779685" type="Cano_14">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="458287931496505" type="Cano_15">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Anchor" id="0" name="Set enabled" sid="626478266370952" type="Cano_16">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
